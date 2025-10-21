@@ -1,0 +1,42 @@
+<!--Desiree Boudreaux 10/21/2025-->
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <title>Shopping Discount Calculator</title>
+</head>
+<body>
+    <h1>Week 3 project: If statements and comparison operators</h1>
+    <h2>Questions:</h2>
+    <p><strong>Name a situation where you would need to create an "if" statement.</strong></p>
+        <p><em>You would use an if statement when your code needs to make a decision based on a condition. For example, if one situation is true, then run a specific block of code. If that condition is not true, then run a different block using else. This allows your program to respond differently depending on what is happening.
+        </em></p>
+    <p><strong>When comparing values,  in what data type is the result stored?</strong></p>
+    <p><em>When comparing values in JavaScript all data tyes result in <strong>Boolean</strong>, either true or false. This helps to tell if the comparison condition was met or not.</em></p>
+    <script>
+    //Step 1. Use a prompt asking for total and save it as variable called total
+    let total = prompt("What is your shopping total?", "");
+
+    //Convert total to numbers
+    total = Number(total);
+
+    //Step 2. Show the customer total and ask to click okay to confirm
+    let confirmed = confirm(`$${total} total? Click ok to continue.`);
+
+    //Step 3. Use an if statement checking for totals of less than $50
+    if (confirmed && total < 50) {
+        alert("No Discount");
+    }
+
+    //Step 5. Use an if statement to check for totals greater than or equal to $100
+    else if (confirmed && total >= 100) {
+        alert("Congrats you get 20% off!")
+    }
+
+    //Step 4. Use an if statement to check for totals greater than or equal to $75
+    else if (confirmed && total >= 75) {
+        alert("Congrats you get 10% off!")
+    }
+</script>    
+</body>
+</html>
