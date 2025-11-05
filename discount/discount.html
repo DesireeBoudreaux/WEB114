@@ -1,0 +1,51 @@
+<!-- Desiree Boudreaux - 11/3/2025 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping trip and Discount</title>
+</head>
+<body>
+  <script>
+
+//Step 1. Initialize variables
+let keepAdding = true;
+let itemName;
+let itemPrice;
+let total = 0;
+
+//Step 2. Add items & prices
+do {
+      itemName = prompt("Enter item name (or 'done' to finish): ");
+      if (itemName && itemName.toLowerCase() !== "done") {
+        let priceEntered = prompt("Enter price for " + itemName + ": ");
+        
+        //Step 3. calculate total and convert string to a number
+        itemPrice = parseFloat(priceEntered);
+        if (!isNaN(itemPrice)) {
+          total += itemPrice;
+        } else {
+          console.log("Invalid price entered. Skipping item.");
+        }
+      } else {
+        keepAdding = false;
+      }
+    } while (keepAdding);
+
+    //Step 4. Apply discount if total is over $100
+    let finalTotal = total;
+    if (total > 100) {
+      let discount = total * 0.20;
+      finalTotal = total - discount;
+      console.log("Discount applied: $" + discount.toFixed(2));
+    } else {
+      console.log("No discount applied.");
+    }
+
+    //Step 5. Display final total
+    console.log("Final total: $" + finalTotal.toFixed(2));
+
+  </script>
+</body>
+</html>
