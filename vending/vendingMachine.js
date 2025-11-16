@@ -22,7 +22,7 @@ if (snackCount === null) {
     console.log("Snack #" + i + ": " + snack + " given to customer");
 
     /*if (i % 3 === 0) {
-      console.log("🎉You got a bonus snack!🎉");
+      console.log("You got a bonus snack!");
     }*/
    
     //Optional Challenge
@@ -31,6 +31,7 @@ if (snackCount === null) {
     }
   }
 }
+
 
 
 
