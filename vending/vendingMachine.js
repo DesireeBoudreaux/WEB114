@@ -27,10 +27,11 @@ if (snackCount === null) {
    
     //Optional Challenge
     if (i % 2 === 0 || i % 5 === 0) {
-      console.log("BONUS SNACK GIVEN! Enjoy your extra snack!")
+      console.log("BONUS SNACK GIVEN! Enjoy!")
     }
   }
 }
+
 
 
 
