@@ -61,5 +61,3 @@ document.addEventListener('click', function (event) {
         moodDisplay.textContent = config.message;
   }
 });
-
-
