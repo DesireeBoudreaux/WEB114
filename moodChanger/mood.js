@@ -33,9 +33,8 @@ const moods = {
      
     reset:  { bg: 'white',
               text: 'black',
-              message: 'Choose a mood...', 
-
-    }           
+              message: 'Choose a mood...'
+            }           
 };
 
 //Step 3: Add the Event Listener with Delegation
@@ -60,6 +59,7 @@ document.addEventListener('click', function (event) {
         document.body.style.backgroundColor = config.bg;
         document.body.style.color = config.text;
         moodDisplay.textContent = config.message;
-
   }
 });
+
+
