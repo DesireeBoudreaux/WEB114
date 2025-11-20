@@ -42,8 +42,24 @@
     <button class="mood-btn" data-mood="mysterious">Mysterious</button>
     <button class="mood-btn" data-mood="reset">Reset</button>
   </div>
-
+  
   <p id="moodDisplay">Choose a mood...</p>
+
+  <!--Questions and answers-->
+  <div>
+   <h2>JavaScript Q&As</h2>
+
+    <p><strong>Why is the JavaScript textContent property safer than innerHTML?</strong></p>
+    <p><em><strong>textContent</strong> inserts only plain text. It doesn't run HTML or JavaScript, avoiding malicious code and scripts.</em></p>
+
+  <p><strong> If use an HTML text box on a page and it has an attribute (for example id="text")  and a corresponding DOM property for example, const box = document.getElementById("text"). 
+How do the two elements relate?</strong></p>
+  <p><em><strong>id</strong> identifies the element in HTML. <strong>getElementById</strong> gives a JavaScript reference to that element.</em></p>
+
+  <p><strong>What would happen to the text box with id="text" if it added this line to the code above:
+text.textContent = "Hello!"?</strong></p>
+  <p><em>The element with <strong>id="text"</strong> will display the message Hello!</em></p>
+  </div>
 
   <script src="mood.js"></script>
 </body>
