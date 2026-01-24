@@ -25,7 +25,7 @@ function shuffle(array) {
 //Create the board, make pairs, shuffle and create card elements
 function createGameBoard() {
     deck = shuffle([...emojis, ...emojis]); //make pairs
-    boardEl.innerHTML = "";
+    boardEl.textContent = ""; // clear board
     score = 0;
     scoreEl.textContent = "Score: " + score;
     messageEl.textContent = "Click 2 cards to find a match.";
@@ -80,3 +80,4 @@ resetButton.addEventListener("click", createGameBoard);
 
 // Start game
 createGameBoard();
+
