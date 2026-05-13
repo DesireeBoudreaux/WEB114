@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hummingbird Quiz Game</title>
+</head>
+<body>
+    <h1>Hummingbird Quiz</h1>
+    <script>
+        //Asking the user to answer questions about hummingbirds then storing them to variables answer, answer2, answer3, and answer4
+        
+        // Question 1
+        let answer = prompt("What color is a ruby-throated hummingbird's throat?");
+        answer = answer.toLowerCase();
+        if (answer === "red") {
+            console.log("Correct!");
+        } else {
+            alert("Incorrect! The answer is red.");
+        }
+
+        // Question 2
+        let answer2 = prompt("How many times per second can a hummingbird flap its wings?");
+        if (Number(answer2) === 80) {
+            console.log("Correct!");
+        } else {
+            alert("Incorrect! The answer is 80.");
+        }
+
+        // Question 3
+        let answer3 = prompt("Do hummingbirds migrate?");
+        answer3 = answer3.toLowerCase();
+        if (answer3 === "yes") {
+            console.log("Correct!");
+        } else {
+            alert("Incorrect! Hummingbirds do migrate.");
+        }
+
+        // Question 4
+        let answer4 = prompt("What is the smallest bird in the world?");
+        answer4 = answer4.toLowerCase();
+        if (answer4 === "bee hummingbird") {
+            console.log("Correct!");
+        } else {
+            alert("Incorrect! The smallest bird in the world is the bee hummingbird.");
+        }
+    </script>
+</body>
+</html>
